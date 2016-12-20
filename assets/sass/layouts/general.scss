@@ -1,0 +1,29 @@
+.content {
+  margin: 0 auto;
+  @include respond-to("xs") {
+    width: 544px;
+  }
+  @include respond-to("sm") {
+    width: 767px;
+  }
+  @include respond-to("md") {
+    width: 991px;
+  }
+  @include respond-to("lg") {
+    width: 991px;
+  }
+  @include clearfix;
+
+  &-wrapper {
+    display: block;
+    width: 100%;
+  }
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
