@@ -1,4 +1,5 @@
 $brand-height: 85px;
+$brand-width: 170px;
 
 @mixin list-item {
   position: relative;
@@ -32,20 +33,24 @@ $brand-height: 85px;
   }
 
   &_brand {
+    position: relative;
     height: $brand-height;
+    width: $brand-width;
     margin: 0;
     font-size: 1.5em;
   }
 
-  &_brand-title {
-    position: absolute;
-    height: $brand-height;
-    text-indent: -9999px;
-  }
-
   &_brand-img {
     position: absolute;
-    height: $brand-height;
+    height: 100%;
+    width: 100%;
+  }
+
+  &_brand-title {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-indent: -9999px;
   }
 
   &_navbar {
