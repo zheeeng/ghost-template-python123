@@ -15,6 +15,7 @@ $brand-width: 170px;
 }
 
 .header {
+  display: block;
   position: relative;
   color: $color;
   border-bottom: 1px solid #e5eff5;
@@ -55,6 +56,7 @@ $brand-width: 170px;
   }
 
   &_navbar {
+    display: block;
     padding: 10px 0;
     height: 85px;
     line-height: 85px;
@@ -62,10 +64,12 @@ $brand-width: 170px;
   }
 
   &_subnavbar{
+    display: block;
     padding: 0;
   }
 
   &_list {
+    display: block;
   }
 
   &_list-item {
@@ -78,6 +82,7 @@ $brand-width: 170px;
   }
 
   &_sublist {
+    display: block;
     position: absolute;
     white-space: nowrap;
     top: 100%;
