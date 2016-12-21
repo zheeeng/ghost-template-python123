@@ -1,0 +1,13 @@
+.post {
+  &_title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 10px;
+  }
+  &_content {
+    padding-left: 10px;
+  }
+}
+
+@import 'base.scss';
