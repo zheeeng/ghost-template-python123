@@ -19,7 +19,7 @@
   @include list-item;
 }
 
-.list-item:hover .list_sublist {
+.list-item:hover .sublist {
   height: auto;
   opacity: 1;
 }
