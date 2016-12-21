@@ -13,15 +13,9 @@
 
 .list {
   display: block;
-}
-
-.list-item {
-  @include list-item;
-}
-
-.list-item:hover .sublist {
-  height: auto;
-  opacity: 1;
+  &_item {
+    @include list-item;
+  }
 }
 
 .sublist {
@@ -34,8 +28,13 @@
   opacity: 0;
   overflow: hidden;
   transition: opacity 1s ease;
-}
 
-.sublist-item {
-  @include list-item;
+  &_item {
+    @include list-item;
+  }
+
+  @at-root .list_item:hover & {
+    height: auto;
+    opacity: 1;
+  }
 }
