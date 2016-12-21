@@ -1,6 +1,7 @@
 .error {
-  padding: 120px;
-  color: $color;
+  width: 100%;
+  height: $min-mainheight;
+  color: lighten($color, 15%);
   &_info {
     text-align: center;
   }

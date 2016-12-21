@@ -1,22 +1,24 @@
 .content {
+  position: relative;
   margin: 0 auto;
+  width: 70%;
   @include respond-to("xs") {
-    width: 544px;
+    min-width: 544px;
   }
   @include respond-to("sm") {
-    width: 767px;
+    min-width: 767px;
   }
   @include respond-to("md") {
-    width: 991px;
+    min-width: 991px;
   }
   @include respond-to("lg") {
-    width: 991px;
+    min-width: 991px;
   }
   @include clearfix;
 
   &-wrapper {
     display: block;
-    width: 100%;
+    min-width: 100%;
   }
 }
 
@@ -37,4 +39,13 @@
 
 .pull-right {
   float: right;
+}
+
+.table-layout {
+  display: table;
+}
+
+.vertical {
+    display: table-cell;
+    vertical-align: middle;
 }

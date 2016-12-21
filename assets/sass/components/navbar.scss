@@ -4,9 +4,11 @@
   height: 85px;
   line-height: 85px;
   font-size: 1.25em;
+  @include clearfix;
 }
 
 .subnavbar{
   display: block;
   padding: 0;
+  @include clearfix;
 }
