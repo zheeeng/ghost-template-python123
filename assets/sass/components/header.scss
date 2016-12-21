@@ -1,0 +1,10 @@
+.site-header {
+  display: block;
+  position: relative;
+  color: $color;
+  border-bottom: 1px solid #e5eff5;
+  margin-bottom: 40px;
+
+  @include reset-ul;
+  @include reset-a;
+}

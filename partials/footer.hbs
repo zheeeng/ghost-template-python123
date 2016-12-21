@@ -1,15 +1,13 @@
-<footer class="footer content-wrapper">
-  <nav class="footer_navbar content">
-    <ul class="footer_list">
-      <li class="footer_list-item"><a href="/about">关于我们</a></li>
-      <li class="footer_list-item"><a href="/contact">联系我们</a></li>
-    </ul>
-  </nav>
-  <section class="footer_copyright content">
-    <a href="{{@blog.url}}">{{@blog.title}}</a>
-    &copy; {{date format="YYYY"}}
-  </section>
-  <section class="footer_poweredby content">
-    Proudly published with <a href="https://ghost.org">Ghost</a>
-  </section>
-</footer>
+<nav class="subnavbar content">
+  <ul class="list">
+    <li class="list-item link"><a href="/about">关于我们</a></li>
+    <li class="list-item link"><a href="/contact">联系我们</a></li>
+  </ul>
+</nav>
+<section class="copyright content">
+  <a href="{{@blog.url}}">{{@blog.title}}</a>
+  &copy; {{date format="YYYY"}}
+</section>
+<section class="poweredby content">
+  Proudly published with <a href="https://ghost.org">Ghost</a>
+</section>

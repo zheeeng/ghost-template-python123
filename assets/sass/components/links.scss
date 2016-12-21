@@ -1,0 +1,48 @@
+.link {
+  > a {
+    display: block
+  }
+  &:hover > a {
+    color: $color-hover;
+  }
+  &__ml:hover > a {
+    color: $color-ml;
+  }
+  &__gd:hover > a {
+    color: $color-gd;
+  }
+  &__sp:hover > a {
+    color: $color-sp;
+  }
+  &__da:hover > a {
+    color: $color-da;
+  }
+  &__cs:hover > a {
+    color: $color-cs;
+  }
+  &__sc:hover > a {
+    color: $color-sc;
+  }
+  &__practice > a {
+    line-height: initial;
+    padding: 10px;
+    color: lighten(#98ba55, 10%);
+    border: 1px lighten(#98ba55, 10%) solid;
+    border-radius: 5px;
+  }
+  &__practice:hover > a {
+    color: #98ba55;
+    border-color: #98ba55;
+  }
+  &__discuss > a {
+    line-height: initial;
+    padding: 10px;
+    color: lighten(#df7879, 15%);
+    border: 1px lighten(#df7879, 15%) solid;
+    border-radius: 5px;
+  }
+  &__discuss:hover > a {
+    color: #df7879;
+    border-color: #df7879;
+  }
+}

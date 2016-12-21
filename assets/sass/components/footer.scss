@@ -1,0 +1,11 @@
+.site-footer {
+  display: block;
+  position: relative;
+  color: $color;
+  border-top: 1px solid #e5eff5;
+  margin-top: 40px;
+  text-align: center;
+
+  @include reset-ul;
+  @include reset-a;
+}

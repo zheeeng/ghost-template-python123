@@ -1,0 +1,23 @@
+$brand-height: 85px;
+$brand-width: 170px;
+
+.brand {
+  position: relative;
+  height: $brand-height;
+  width: $brand-width;
+  margin: 0;
+  font-size: 1.5em;
+
+  &-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  &-title {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-indent: -9999px;
+  }
+}

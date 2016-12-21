@@ -1,0 +1,15 @@
+@mixin reset-ul {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@mixin reset-a {
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 1s ease;
+  }
+}

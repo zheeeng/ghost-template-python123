@@ -1,0 +1,41 @@
+@mixin list-item {
+  position: relative;
+  margin: 0 10px;
+  padding: 10px;
+  display: inline-block;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.list {
+  display: block;
+}
+
+.list-item {
+  @include list-item;
+}
+
+.list-item:hover .list_sublist {
+  height: auto;
+  opacity: 1;
+}
+
+.sublist {
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  top: 100%;
+  left: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 1s ease;
+}
+
+.sublist-item {
+  @include list-item;
+}

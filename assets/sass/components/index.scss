@@ -1,0 +1,28 @@
+@import 'header.scss';
+@import 'footer.scss';
+@import 'brand.scss';
+@import 'navbar.scss';
+@import 'list.scss';
+@import 'links.scss';
+
+.copyright {
+  display: block;
+  padding: 5px;
+  a {
+    text-decoration: underline;
+    &:hover {
+        color: $color-hover;
+    }
+  }
+}
+
+.poweredby {
+  display: block;
+  padding: 5px;
+  a {
+    text-decoration: underline;
+    &:hover {
+        color: $color-hover;
+    }
+  }
+}
