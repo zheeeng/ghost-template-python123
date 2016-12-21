@@ -20,6 +20,17 @@
   }
 }
 
+.row {
+  @include clearfix;
+}
+
+@for $i from 1 through 5 {
+  .span-#{$i} {
+    float: left;
+    width: 20% * $i;
+  }
+}
+
 .pull-left {
   float: left;
 }

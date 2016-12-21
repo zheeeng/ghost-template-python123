@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{> error-head}}
+</head>
+<body class="{{body_class}}">
+
+  <header class="site-header">
+    <div class="content">
+      {{navigation}}
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="content">
+
+      <div class="error row">
+        <section class="error_info span-2">
+          <img
+            class="error_img"
+            src="{{asset "img/404-ghost@2x.png" ghost="true"}}"
+            srcset="{{asset "img/404-ghost.png" ghost="true"}} 1x, {{asset "img/404-ghost@2x.png" ghost="true"}} 2x"
+          />
+          <h1 class="error_code">{{code}}</h1>
+          <h2 class="error_message">{{message}}</h2>
+        </section>
+        <section class="error_oops span-3">
+          <h2>喔，糟糕，出了一点错误!</h2>
+          <p><a class="error_link" href="{{@blog.url}}">回到首页 →</a></p>
+        </section>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="content">
+      {{> footer}}
+    </div>
+  </footer>
+
+  {{> scripts}}
+</body>
+</html>
