@@ -28,6 +28,7 @@
   opacity: 0;
   overflow: hidden;
   transition: opacity 1s ease;
+  color: $color-primary;
 
   &_item {
     @include list-item;

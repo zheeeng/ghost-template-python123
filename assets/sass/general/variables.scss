@@ -1,6 +1,10 @@
-$color: #555;
-$color-active:#46b3f0;
-$color-hover:#46b3f0;
+$color-primary: #555;
+$color-primary-active: #46b3f0;
+$color-primary-hover: #46b3f0;
+
+$color-secondary: #eaeada;
+$color-secondary-active: lighten(#eaeada, 10%);
+$color-secondary-hover: lighten(#eaeada, 10%);
 
 $color-ml: #bf9f77;
 $color-gd: #67c100;
@@ -9,4 +13,11 @@ $color-da: #16a086;
 $color-cs: #648fce;
 $color-sc: #02aef2;
 
-$min-mainheight: 500px;
+$color-practice: #1d9d74;
+$color-discuss: #ff534f;
+
+$bc-gradient-start: #6075b7;
+$bc-gradient-end: #5494c2;
+$bc-gradient-deg: 90deg;
+
+$min-mainheight: 560px;

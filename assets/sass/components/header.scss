@@ -1,10 +1,11 @@
 .site-header {
   display: block;
   position: relative;
-  color: $color;
-  border-bottom: 1px solid #e5eff5;
   margin-bottom: 40px;
+  color: $color-secondary;
 
   @include reset-ul;
   @include reset-a;
+
+  @include gradient-background($bc-gradient-deg, $bc-gradient-start, $bc-gradient-end);
 }

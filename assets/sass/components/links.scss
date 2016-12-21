@@ -1,9 +1,26 @@
+@mixin external-link($selector, $fc, $bc){
+  #{$selector} > a {
+    line-height: initial;
+    padding: 10px;
+    font-weight: 500;
+    background-color: $bc;
+    color: $fc;
+    border-radius: 5px;
+    transition: all .3s ease;
+  }
+  #{$selector}:hover > a {
+    background-color: $fc;
+    color: $bc;
+  }
+}
+
 .link {
   > a {
-    display: block
+    display: block;
+    transition: all 1s ease;
   }
   &:hover > a {
-    color: $color-hover;
+    color: $color-secondary-hover;
   }
   &__ml:hover > a {
     color: $color-ml;
@@ -23,26 +40,6 @@
   &__sc:hover > a {
     color: $color-sc;
   }
-  &__practice > a {
-    line-height: initial;
-    padding: 10px;
-    color: lighten(#98ba55, 15%);
-    border: 1px lighten(#98ba55, 15%) solid;
-    border-radius: 5px;
-  }
-  &__practice:hover > a {
-    color: #98ba55;
-    border-color: #98ba55;
-  }
-  &__discuss > a {
-    line-height: initial;
-    padding: 10px;
-    color: lighten(#df7879, 15%);
-    border: 1px lighten(#df7879, 15%) solid;
-    border-radius: 5px;
-  }
-  &__discuss:hover > a {
-    color: #df7879;
-    border-color: #df7879;
-  }
+  @include external-link('&__practice', $color-practice, $color-secondary-hover);
+  @include external-link('&__discuss', $color-discuss, $color-secondary-hover);
 }

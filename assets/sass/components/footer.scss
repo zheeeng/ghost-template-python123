@@ -1,11 +1,13 @@
 .site-footer {
   display: block;
-  position: relative;
-  color: $color;
+  width: 100%;
+  bottom: 0;
+  color: $color-secondary;
   border-top: 1px solid #e5eff5;
   margin-top: 40px;
   padding: 20px 0;
   text-align: center;
+  background-color: #333;
 
   @include reset-ul;
   @include reset-a;
