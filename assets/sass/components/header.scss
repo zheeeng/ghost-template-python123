@@ -7,5 +7,5 @@
   @include reset-ul;
   @include reset-a;
 
-  @include gradient-background($bc-gradient-deg, $bc-gradient-start, $bc-gradient-end);
+  @include gradient-background(90deg, $bc-gradient-start, $bc-gradient-end);
 }
